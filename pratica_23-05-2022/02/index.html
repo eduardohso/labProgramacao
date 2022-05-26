@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<form onsubmit="event.preventDefault()">
+				<input
+					type="text"
+					placeholder="Digite seu nome"
+					id="nome"
+					name="nome"
+				/>
+				<br />
+				<input
+					type="text"
+					placeholder="Digite seu sobrenome"
+					id="sobrenome"
+					name="sobrenome"
+				/>
+				<br />
+				<input
+					type="number"
+					placeholder="Digite sua idade"
+					id="idade"
+					name="idade"
+				/>
+				<br />
+				<label for="genero">Gênero:</label>
+				<select id="genero" name="genero">
+					<option value=""></option>
+					<option value="masculino">Masculino</option>
+					<option value="feminino">Feminino</option>
+				</select>
+        <br>
+        <input type="text" 
+          placeholder="Conte um pouco sobre você"
+          id="sobre"
+          name="sobre"> 
+				<input type="submit" value="Enviar" onclick="imprimir()"/>
+			</form>
+		</div>
+		<div>
+			<p id="paragrafo"></p>
+			<p id="paragrafoSobre"></p>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
